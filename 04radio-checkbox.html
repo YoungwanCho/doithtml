@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>radio-checkbox</title>
+    </head>
+    <body>
+        <fieldset>
+            <legend>신청과목</legend>
+            <p>이 달에 신청할 과목을 선택하세요(1과목만 가능)</p>
+            <label>
+                <input type="radio" name="subject" value="speacking">회화</label>
+            </label>
+            <label>
+                <input type="radio" name="subject" value="grammar">문법</label>
+            </label>
+            <label>
+                <input type="radio" name="subject" value="writing">작문</label>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>메일링</legend>
+            <p>메일로 받고 싶은 뉴스 주제를 선택해주세요(복수 선택 가능)</p>
+            <label>
+                <input type = "checkbox" name="mailing1" value="news">해외 단선</label>
+            </label>
+            <label>
+                <input type="checkbox" name="mailing2" value="dialog">5분 회화</label>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>과 티셔츠 질문</legend>
+            <p>올해 과 티를 만들려고합니다 원하는 색상을 추천해주세요</p>
+            <label>선호색상<input type="color" value="#00ff00"></label>
+        </fieldset>
+        <fieldset>
+            <legend>조회기간선택</legend>
+            <p>조회기간 선택</p>
+            <label><input type="date" id="start"></label>
+            <label><input type="date" id="end"></label>
+        </fieldset>
+        <h3>원하는 대관시간을 선택하세요</h3>
+        <label for="">시작 시간<input type="time" value="09:00" id="start"></label>
+        <label for="">종료 시간<input type="time" value="18:00" id="end"></label>
+
+        <h3>대관기간을 선택하세요(다른날짜)</h3>
+        <label><input type = "datetime-local" value="2016-03-02T-09:00" id="start"></label>
+        <label><input type = "datatime-local" value="2016-03-02T-18:00" id="end"></label>
+        <form action="register.php" method="post">
+            <label>메일 주소<input type = "text"></label>
+            <input type="submit" value="제출">
+            <input type="reset" value="다시입력">
+        </form>
+
+        <label>아이디<input type="text" size="15"></label>
+        <label>비밀번호<input type="password" size="15"></label>
+        <input type = "image" id="butt" src="images/login.jpg" alt="login">
+    </body>
+</html>
