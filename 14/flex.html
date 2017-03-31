@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>flex test</title>
+        <style>
+            #container{
+                display: flex;
+                flex-direction: row;
+                flex-wrap:wrap-reverse;
+            }
+            #container div{
+                width: 200px;
+                border: 1px solid black;
+                background: #ccc;
+            }
+            #box1{order:2; flex: 1 1 0;}
+            #box2{order:3; flex: 2 2 0;}
+            #box3{order:1;}
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="box1"><h2>1</h2></div>
+            <div id="box2"><h2>2</h2></div>
+            <div id="box3"><h2>3</h2></div>
+        </div>
+    </body>
+</html>
