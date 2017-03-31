@@ -110,6 +110,25 @@
 		#container section:nth-child(odd){
 			background: #eee;
 		}
+		@media screen and (min-width:768px)
+		{
+			header{
+				height: 400px;
+			}
+			#intro, #map{
+				-moz-box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				box-sizing: border-box;
+				width: 50%;
+				height: 400px;
+				float: left;
+				margin: 0;
+				border: 1px dotted #ccc;
+			}
+			#choice{
+				clear: left;
+			}
+		}
 	</style>
 </head>
 <body>
